@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- SEO Meta Tags -->
+  <title>Gunturu Venkata Naga Sai | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Gunturu Venkata Naga Sai, a Full Stack Developer and Blockchain Enthusiast. Showcase of web development, smart contracts, and professional credentials."/>
+  <meta name="keywords" content="Gunturu Venkata Naga Sai, Portfolio, Web Developer, Full Stack, Blockchain, Solidity, React, MIC College of Technology"/>
+  <meta name="author" content="Gunturu Venkata Naga Sai"/>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor Trail -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav id="navbar">
+      <div class="nav-left">
+        <div class="nav-avatar">
+          <img src="assets/profile.jpg" alt="Gunturu Venkata Naga Sai Profile"/>
+        </div>
+        <span class="nav-logo">G.V.N. Sai</span>
+      </div>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Credentials</a>
+        <a href="#education">Timeline</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="dot"></span> Open to Opportunities
+        </div>
+        <h1 class="hero-name">
+          Gunturu Venkata <span>Naga Sai</span>
+        </h1>
+        <h2 class="hero-role">
+          Full Stack developer & <b>Blockchain Developer </b> &<b> UI/UX</b> & <b>NLP</b>
+        </h2>
+        <p class="hero-desc">
+          Passionate tech innovator creating premium, high-performance web applications and decentralized smart contract solutions. Dedicated to clean architecture and seamless digital experiences.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary" id="hero-cta-btn">Get In Touch</a>
+          <a href="#projects" class="btn-outline" id="hero-sec-btn">View My Work</a>
+        </div>
+        
+        <!-- Stats Row -->
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">B.Tech</div>
+            <div class="stat-label">Information Tech</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="hero-photo-section">
+        <div class="hero-photo-frame">
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+          
+        
+
+          <div class="hero-photo-bg"></div>
+          <div class="hero-photo-img">
+            <img src="assets/profile.jpg" alt="Gunturu Venkata Naga Sai Portrait"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-scroll">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-label">About Me</div>
+    <div class="about-grid reveal">
+      <!-- Profile Card -->
+      <div class="about-card">
+        <div class="about-avatar">
+          <img src="assets/profile.jpg" alt="G.V.N. Sai Avatar"/>
+        </div>
+        <h3 class="about-name-card">Gunturu Venkata Naga Sai</h3>
+        <p class="about-meta">Full Stack Developer & Blockchain Enthusiast</p>
+        <div class="about-badges">
+          <span class="badge badge-blue">Developer</span>
+          <span class="badge badge-green">Innovator</span>
+          <span class="badge badge-red">Architect</span>
+        </div>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="icon">✉</div>
+            <div>
+              <div class="label">Email</div>
+              <div class="val">venkatanagasai@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">📍</div>
+            <div>
+              <div class="label">Location</div>
+              <div class="val">Andhra Pradesh, India</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">🎓</div>
+            <div>
+              <div class="label">Education</div>
+              <div class="val">B.Tech IT, MIC College of Tech</div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">🔗</div>
+            <div>
+              <div class="label">GitHub</div>
+              <div class="val"><a href="https://github.com/gunturuvenkatanagasai-stack" target="_blank" style="color: inherit; text-decoration: none;">github.com/gunturuvenkatanagasai-stack</a></div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">💼</div>
+            <div>
+              <div class="label">LinkedIn</div>
+              <div class="val"><a href="https://www.linkedin.com/in/venkata-naga-sai-gunturu-34ab1a358/" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/venkata-naga-sai-gunturu...</a></div>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="icon">🏆</div>
+            <div>
+              <div class="label">Unstop</div>
+              <div class="val"><a href="https://unstop.com/u/venkasai80969" target="_blank" style="color: inherit; text-decoration: none;">unstop.com/u/venkasai80969</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bio Text -->
+      <div class="about-text">
+        <h3 class="section-title">Driven by <span>Curiosity</span> and Code</h3>
+        <p>
+          Hello! I am <strong>Gunturu Venkata Naga Sai</strong>, an Information Technology student currently pursuing a B.Tech degree at <strong>DVR & Dr. HS MIC College of Technology</strong>. I specialize in crafting robust web architectures and exploring decentralized technologies.
+        </p>
+        <p>
+          My technical repertoire spans modern frontend frameworks like <strong>React</strong>, backend development with <strong>Node.js and Express</strong>, databases like <strong>MongoDB</strong> (learned through my Full Stack Development training at <strong>Tutude</strong>), and smart contract development using <strong>Solidity</strong> (learned via <strong>EduSkills</strong>).
+        </p>
+        <p>
+          I am passionate about solving complex real-world problems. Whether building full-stack platforms or optimizing decentralized workflows, I focus on delivering seamless, aesthetic, and secure user experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-label">Skills</div>
+    <h2 class="section-title reveal">Technical <span>Expertise</span></h2>
+    <p class="section-sub reveal">My toolbox includes modern frontend, backend, and blockchain development technologies, curated for building production-ready apps.</p>
+    
+    <div class="skills-container reveal">
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-card">
+          <div class="skill-icon">⚛</div>
+          <h3 class="skill-name">Frontend Development</h3>
+          <p class="skill-desc">Creating beautiful, dynamic, and responsive interfaces using React, JavaScript, HTML5, and CSS3.</p>
+          <div class="skill-bar-header">
+            <span>Proficiency</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" style="transform: scaleX(0.9);"></div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card">
+          <div class="skill-icon">⚙</div>
+          <h3 class="skill-name">Backend Development</h3>
+          <p class="skill-desc">Building scalable server-side systems, REST APIs, and microservices with Node.js and Express.js.</p>
+          <div class="skill-bar-header">
+            <span>Proficiency</span>
+            <span class="skill-pct">40%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" style="transform: scaleX(0.4);"></div>
+          </div>
+        </div>
+
+        <!-- Blockchain -->
+        <div class="skill-card">
+          <div class="skill-icon">⛓</div>
+          <h3 class="skill-name">Blockchain Technology</h3>
+          <p class="skill-desc">Designing secure smart contracts and connecting decentralized apps via Solidity, Ethers.js, and Web3.js.</p>
+          <div class="skill-bar-header">
+            <span>Proficiency</span>
+            <span class="skill-pct">50%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" style="transform: scaleX(0.5);"></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-card">
+          <div class="skill-icon">🍃</div>
+          <h3 class="skill-name">Databases & Cloud</h3>
+          <p class="skill-desc">Structuring efficient databases and querying schemas using MongoDB, SQL, and Firebase storage.</p>
+          <div class="skill-bar-header">
+            <span>Proficiency</span>
+            <span class="skill-pct">40%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" style="transform: scaleX(0.4);"></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <div class="skill-icon">🐙</div>
+          <h3 class="skill-name">DevOps & Tools</h3>
+          <p class="skill-desc">Version control, team collaboration, and automated deployments with Git, GitHub, and Postman API testing.</p>
+          <div class="skill-bar-header">
+            <span>Proficiency</span>
+            <span class="skill-pct">40%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar" style="transform: scaleX(0.4);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Grid Section -->
+  <section id="tech">
+    <div class="section-label">Tech Stack</div>
+    <h2 class="section-title reveal">Tools <span>I Speak</span></h2>
+    <div class="tech-inner reveal">
+      <div class="tech-grid">
+        <div class="tech-item">
+          <div class="tech-emoji">⚛️</div>
+          <div class="tech-name">React</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">💛</div>
+          <div class="tech-name">JavaScript</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">💚</div>
+          <div class="tech-name">Node.js</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">🍃</div>
+          <div class="tech-name">MongoDB</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">⛓️</div>
+          <div class="tech-name">Solidity</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">🐙</div>
+          <div class="tech-name">Git & GitHub</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">🎨</div>
+          <div class="tech-name">CSS3</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">📄</div>
+          <div class="tech-name">HTML5</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">🐍</div>
+          <div class="tech-name">Python</div>
+        </div>
+        <div class="tech-item">
+          <div class="tech-emoji">⚙️</div>
+          <div class="tech-name">REST APIs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title reveal">Academic <span>Projects</span></h2>
+    <p class="section-sub reveal">A showcase of core academic developments and web systems built using modern software practices.</p>
+    
+    <div class="projects-inner reveal">
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="proj-card">
+          <div class="proj-thumb proj-thumb-1">🏗️</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">HTML5</span>
+              <span class="proj-tag">CSS3</span>
+              <span class="proj-tag">JavaScript</span>
+              <span class="proj-tag">Responsive</span>
+            </div>
+            <h3 class="proj-title">SRK Constructions Website</h3>
+            <p class="proj-desc">Designed and developed a fully responsive corporate website for a construction firm. Built an intuitive UI with clean navigation and seamless layouts across mobile, tablet, and desktop devices using clean frontend principles.</p>
+            <div class="proj-links">
+              <a href="https://github.com/gunturuvenkatanagasai-stack" target="_blank" class="proj-link">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/venkata-naga-sai-gunturu-34ab1a358/" target="_blank" class="proj-link">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card">
+          <div class="proj-thumb proj-thumb-2">🪪</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Flask</span>
+              <span class="proj-tag">SQL</span>
+              <span class="proj-tag">REST APIs</span>
+            </div>
+            <h3 class="proj-title">ID Card Reuse System</h3>
+            <p class="proj-desc">Developed an institutional web application to manage and reuse ID cards efficiently. Implemented secure user authentication, digital records databases, and a clean administrative tracking and verification panel.</p>
+            <div class="proj-links">
+              <a href="https://github.com/gunturuvenkatanagasai-stack" target="_blank" class="proj-link">GitHub ↗</a>
+              <a href="https://www.linkedin.com/in/venkata-naga-sai-gunturu-34ab1a358/" target="_blank" class="proj-link">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section (NEW, integrating provided credentials) -->
+  <section id="certificates">
+    <div class="section-label">Credentials</div>
+    <h2 class="section-title reveal">Certifications & <span>Internships</span></h2>
+    <p class="section-sub reveal">Industry-recognized accomplishments validating practical expertise in Web Development, Blockchain architectures, and software engineering.</p>
+    
+    <div class="certificates-inner reveal">
+      <div class="certificates-grid">
+        <!-- Certificate 1: Cognifyz -->
+        <div class="cert-card">
+          <div class="cert-thumb">
+            <img src="assets/cert_cognifyz.jpg" alt="Cognifyz Web Development Internship Completion Certificate"/>
+            <div class="cert-overlay">
+              <button class="cert-view-btn">View Credential</button>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Cognifyz Technologies</div>
+            <h3 class="cert-title">Web Development Internship Certificate</h3>
+            <p class="cert-date">October 2025 - November 2025</p>
+          </div>
+        </div>
+
+        <!-- Certificate 2: EduSkills -->
+        <div class="cert-card">
+          <div class="cert-thumb">
+            <img src="assets/offer_eduskills.png" alt="EduSkills Blockchain Virtual Internship Offer Letter"/>
+            <div class="cert-overlay">
+              <button class="cert-view-btn">View Document</button>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">EduSkills (AICTE Virtual Internship)</div>
+            <h3 class="cert-title">Blockchain Technology Internship Offer</h3>
+            <p class="cert-date">June 2026 - August 2026</p>
+          </div>
+        </div>
+
+        <!-- Certificate 3: Claude Code -->
+        <div class="cert-card">
+          <div class="cert-thumb">
+            <img src="assets/cert_claude.png" alt="Anthropic Claude Code in Action Certificate of Completion"/>
+            <div class="cert-overlay">
+              <button class="cert-view-btn">View Certificate</button>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Anthropic</div>
+            <h3 class="cert-title">Claude Code in Action</h3>
+            <p class="cert-date">Issued July 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education / Internships Journey Timeline -->
+  <section id="education">
+    <div class="section-label">My Journey</div>
+    <h2 class="section-title reveal">Work & <span>Education</span></h2>
+    
+    <div class="edu-inner reveal">
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">july 2026 - August 2026</div>
+            <h3 class="tl-title">Blockchain Technology Intern</h3>
+            <p class="tl-sub">EduSkills (AICTE Virtual Internship Program)</p>
+            <p class="skill-desc" style="margin-top: 10px;">
+              Actively trained in Blockchain Technology, smart contracts structures, Solidity development, and Web3 integration frameworks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">June 2026</div>
+            <h3 class="tl-title">Natural Language Processing (NLP) Course</h3>
+            <p class="tl-sub">IIT Kharagpur (West Bengal)</p>
+            <p class="skill-desc" style="margin-top: 10px;">
+              Successfully completed comprehensive academic course studies in Natural Language Processing (NLP) at IIT Kharagpur, West Bengal.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">October 2025 - November 2025</div>
+            <h3 class="tl-title">Web Development Intern</h3>
+            <p class="tl-sub">Cognifyz Technologies</p>
+            <p class="skill-desc" style="margin-top: 10px;">
+              Completed my first internship as a Web Development Intern, designing responsive UI layouts and implementing dynamic elements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2024 - Present</div>
+            <h3 class="tl-title">Full Stack Development Training</h3>
+            <p class="tl-sub">Tutude</p>
+            <p class="skill-desc" style="margin-top: 10px;">
+              Completed comprehensive training in modern full stack engineering methodologies, covering frontend state management and backend server architectures.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-year">2023 - Present</div>
+            <h3 class="tl-title">B.Tech in Information Technology</h3>
+            <p class="tl-sub">DVR & Dr. HS MIC College of Technology</p>
+            <p class="skill-desc" style="margin-top: 10px;">
+              Focusing on core computer science subjects, algorithms, web applications design, databases systems, network security protocols, and advanced software design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title reveal">Get In <span>Touch</span></h2>
+    <p class="section-sub reveal">Have a project in mind, an opportunity, or just want to say hi? Feel free to reach out using the form or direct links below.</p>
+    
+    <div class="contact-inner reveal">
+      <div class="contact-grid">
+        <!-- Form -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Your Email</label>
+            <input type="email" id="email" class="form-input" placeholder="" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Hello! I'd love to discuss a project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="margin-top: 10px; width: max-content;">Send Message</button>
+        </form>
+        
+        <!-- Info Cards -->
+        <div class="contact-info">
+          <!-- Email Card -->
+          <div class="c-item">
+            <div class="c-icon">✉</div>
+            <div class="c-body">
+              <span class="c-label">Direct Mail</span>
+              <a href="mailto:venkatanagasai@gmail.com" class="c-val">venkatanagasai@gmail.com</a>
+            </div>
+          </div>
+          
+          <!-- GitHub Card -->
+          <div class="c-item">
+            <div class="c-icon">🐙</div>
+            <div class="c-body">
+              <span class="c-label">GitHub Profile</span>
+              <a href="https://github.com/gunturuvenkatanagasai-stack" target="_blank" class="c-val">github.com/gunturuvenkatanagasai-stack</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="c-item">
+            <div class="c-icon">💼</div>
+            <div class="c-body">
+              <span class="c-label">LinkedIn Profile</span>
+              <a href="https://www.linkedin.com/in/venkata-naga-sai-gunturu-34ab1a358/" target="_blank" class="c-val">linkedin.com/in/venkata-naga-sai-gunturu...</a>
+            </div>
+          </div>
+
+          <!-- Unstop Card -->
+          <div class="c-item">
+            <div class="c-icon">🏆</div>
+            <div class="c-body">
+              <span class="c-label">Unstop Profile</span>
+              <a href="https://unstop.com/u/venkasai80969" target="_blank" class="c-val">unstop.com/u/venkasai80969</a>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="c-item">
+            <div class="c-icon">📍</div>
+            <div class="c-body">
+              <span class="c-label">Location</span>
+              <span class="c-val">Andhra Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Developed by Venkata Naga Sai Gunturu.</p>
+    <p style="margin-top: 8px; font-size: 11px;">Built with <span>💙</span> &amp;</p>
+  </footer>
+
+  <!-- Lightbox Modal for Certificate Viewing -->
+  <div id="cert-lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+      <img src="" alt="Zoomed Certificate View"/>
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
