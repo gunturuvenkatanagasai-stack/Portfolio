@@ -545,14 +545,22 @@ nav.scrolled {
 }
 
 .stat {
-  background: rgba(11, 15, 25, 0.8);
-  padding: 24px 20px;
+  background: rgba(11, 15, 25, 0.85);
+  padding: 20px 16px 18px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
 }
 
 .stat:hover {
-  background: rgba(59, 130, 246, 0.04);
+  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-2px);
 }
 
 .stat-num {
@@ -562,6 +570,11 @@ nav.scrolled {
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.stat:hover .stat-num {
+  transform: scale(1.05);
 }
 
 .stat-label {
@@ -571,6 +584,29 @@ nav.scrolled {
   margin-top: 4px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+}
+
+.stat-btn-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 3px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease;
+}
+
+.stat:hover .stat-btn-tag {
+  background: var(--accent);
+  color: #030712;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
 /* HERO SCROLL DOWN INDICATOR */
@@ -990,6 +1026,7 @@ section {
 .proj-thumb-1 { background: linear-gradient(135deg, #0f172a, #1e3a8a); }
 .proj-thumb-2 { background: linear-gradient(135deg, #022c22, #064e3b); }
 .proj-thumb-3 { background: linear-gradient(135deg, #2e1065, #4c1d95); }
+.proj-thumb-4 { background: linear-gradient(135deg, #083344, #0e7490); }
 
 .proj-thumb::before {
   content: '';
@@ -1530,6 +1567,19 @@ footer span {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {

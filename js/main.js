@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCertificatesLightbox();
   setupContactForm();
   setupNavbarScroll();
+  setupNavSpy();
 });
 
 /* =========================================================================
@@ -44,8 +45,7 @@ function setupCustomCursor() {
   }
   animateRing();
 
-  // Hover states
-  const interactiveElements = document.querySelectorAll('a, button, input, textarea, .btn-primary, .btn-outline, .tech-item, .skill-card, .proj-card, .cert-card, .tl-card');
+  const interactiveElements = document.querySelectorAll('a, button, input, textarea, .btn-primary, .btn-outline, .tech-item, .skill-card, .proj-card, .cert-card, .tl-card, .copy-btn');
   interactiveElements.forEach(el => {
     el.addEventListener('mouseenter', () => {
       document.body.classList.add('hovered-link');
@@ -344,3 +344,32 @@ function setupNavbarScroll() {
     }
   });
 }
+
+/* =========================================================================
+   8. ACTIVE NAVBAR SECTION SPY
+   ========================================================================= */
+function setupNavSpy() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('#navbar .nav-links a');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    let currentId = '';
+    sections.forEach(sec => {
+      const top = sec.offsetTop - 140;
+      const height = sec.offsetHeight;
+      if (scrollTop >= top && scrollTop < top + height) {
+        currentId = sec.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentId}`) {
+        link.classList.add('active');
+      }
+    });
+  }, { passive: true });
+}
+
+
